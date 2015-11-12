@@ -15,6 +15,9 @@
 		B30F308E1BF4965D00A28465 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B30F308C1BF4965D00A28465 /* LaunchScreen.storyboard */; };
 		B30F30991BF4965D00A28465 /* OSC_SwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B30F30981BF4965D00A28465 /* OSC_SwiftTests.swift */; };
 		B30F30A41BF4965D00A28465 /* OSC_SwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B30F30A31BF4965D00A28465 /* OSC_SwiftUITests.swift */; };
+		B30F30BE1BF4B3F700A28465 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B30F30BD1BF4B3F700A28465 /* RootViewController.swift */; };
+		B30F30C21BF4BC1600A28465 /* SideMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B30F30C11BF4BC1600A28465 /* SideMenuViewController.swift */; };
+		B30F30C41BF4BC6800A28465 /* OSCTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B30F30C31BF4BC6800A28465 /* OSCTabBarController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +53,10 @@
 		B30F309F1BF4965D00A28465 /* OSC-SwiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "OSC-SwiftUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B30F30A31BF4965D00A28465 /* OSC_SwiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OSC_SwiftUITests.swift; sourceTree = "<group>"; };
 		B30F30A51BF4965D00A28465 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B30F30B61BF4B03100A28465 /* OSC-Swift-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "OSC-Swift-Bridging-Header.h"; sourceTree = "<group>"; };
+		B30F30BD1BF4B3F700A28465 /* RootViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
+		B30F30C11BF4BC1600A28465 /* SideMenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SideMenuViewController.swift; sourceTree = "<group>"; };
+		B30F30C31BF4BC6800A28465 /* OSCTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OSCTabBarController.swift; sourceTree = "<group>"; };
 		DDB15A88C5704AF684F38D1D /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -105,6 +112,7 @@
 				B30F30811BF4965D00A28465 /* Products */,
 				53C1BEDBC5DED1E181090499 /* Pods */,
 				ADD2DE8996A95DA714378157 /* Frameworks */,
+				B30F30B61BF4B03100A28465 /* OSC-Swift-Bridging-Header.h */,
 			);
 			sourceTree = "<group>";
 		};
@@ -121,9 +129,9 @@
 		B30F30821BF4965D00A28465 /* OSC-Swift */ = {
 			isa = PBXGroup;
 			children = (
+				B30F30BC1BF4B2E100A28465 /* Main */,
 				B30F30831BF4965D00A28465 /* AppDelegate.swift */,
 				B30F30851BF4965D00A28465 /* ViewController.swift */,
-				B30F30871BF4965D00A28465 /* Main.storyboard */,
 				B30F308A1BF4965D00A28465 /* Assets.xcassets */,
 				B30F308C1BF4965D00A28465 /* LaunchScreen.storyboard */,
 				B30F308F1BF4965D00A28465 /* Info.plist */,
@@ -147,6 +155,33 @@
 				B30F30A51BF4965D00A28465 /* Info.plist */,
 			);
 			path = "OSC-SwiftUITests";
+			sourceTree = "<group>";
+		};
+		B30F30BC1BF4B2E100A28465 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				B30F30BF1BF4BB4800A28465 /* LeftSideMenu */,
+				B30F30C01BF4BB4800A28465 /* TabBar */,
+				B30F30871BF4965D00A28465 /* Main.storyboard */,
+				B30F30BD1BF4B3F700A28465 /* RootViewController.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		B30F30BF1BF4BB4800A28465 /* LeftSideMenu */ = {
+			isa = PBXGroup;
+			children = (
+				B30F30C11BF4BC1600A28465 /* SideMenuViewController.swift */,
+			);
+			path = LeftSideMenu;
+			sourceTree = "<group>";
+		};
+		B30F30C01BF4BB4800A28465 /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				B30F30C31BF4BC6800A28465 /* OSCTabBarController.swift */,
+			);
+			path = TabBar;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -334,8 +369,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B30F30C21BF4BC1600A28465 /* SideMenuViewController.swift in Sources */,
 				B30F30861BF4965D00A28465 /* ViewController.swift in Sources */,
 				B30F30841BF4965D00A28465 /* AppDelegate.swift in Sources */,
+				B30F30BE1BF4B3F700A28465 /* RootViewController.swift in Sources */,
+				B30F30C41BF4BC6800A28465 /* OSCTabBarController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -377,6 +415,7 @@
 				B30F30881BF4965D00A28465 /* Base */,
 			);
 			name = Main.storyboard;
+			path = ..;
 			sourceTree = "<group>";
 		};
 		B30F308C1BF4965D00A28465 /* LaunchScreen.storyboard */ = {
@@ -476,10 +515,13 @@
 			baseConfigurationReference = 3E7EB3B6F820AFAD579BEDCA /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = "OSC-Swift/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.ding.OSC-Swift";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "OSC-Swift-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -488,10 +530,12 @@
 			baseConfigurationReference = 4F9B8C34C69132642BF56A9B /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = "OSC-Swift/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.ding.OSC-Swift";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "OSC-Swift-Bridging-Header.h";
 			};
 			name = Release;
 		};
